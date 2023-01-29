@@ -23,6 +23,7 @@ module.exports = class extends mofron.class.Effect {
 	    this.confmng().add("type",  { type:"string", init:"turn", select:["turn","deg"] });
 
 	    this.speed(10000);
+	    this.eid(0);
             
             this.beforeEvent((b1,b2) => {
                 if ( ("turn" === b1.type()) &&
